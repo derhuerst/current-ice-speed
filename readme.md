@@ -13,6 +13,14 @@
 npx current-ice-speed
 ```
 
+## API
+
+```js
+speed()
+```
+
+Returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that resolves with the current speed in `km/h`.
+
 
 ## Contributing
 
