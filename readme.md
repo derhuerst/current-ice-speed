@@ -11,6 +11,12 @@
 
 ```shell
 npx current-ice-speed
+// 264 km/h
+npx current-ice-speed --json
+// 264
+
+npx current-ice-speed --json // in a tunnel
+// null
 ```
 
 ## API

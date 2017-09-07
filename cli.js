@@ -31,7 +31,13 @@ const json = !!argv.json
 
 speed()
 .then((speed) => {
-	process.stdout.write(json ? JSON.stringify(speed) : speed + ' km/h\n')
+	let out
+	if (json) out = JSON.stringify(speed)
+	else if (speed === null) {
+		out = 'no data'
+		process.exitCode = 1
+	} else out = speed + ' km/h\n'
+	process.stdout.write(out)
 })
 .catch((err) => {
 	console.error(err)
