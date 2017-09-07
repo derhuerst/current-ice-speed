@@ -1,0 +1,34 @@
+{
+	"name": "current-ice-speed",
+	"description": "Get the speed of the ICE train you're sitting in.",
+	"version": "0.1.0",
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"ice",
+		"intercity express",
+		"deutsche bahn",
+		"db",
+		"train"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/current-ice-speed",
+	"repository": "derhuerst/current-ice-speed",
+	"bugs": "https://github.com/derhuerst/current-ice-speed/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"tap-min": "^1.2.1",
+		"tape": "^4.6.3"
+	},
+	"scripts": {
+		"test": "node test.js | tap-min",
+		"prepublishOnly": "npm test"
+	}
+}
