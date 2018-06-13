@@ -27,7 +27,7 @@
 	},
 	"dependencies": {
 		"mri": "^1.1.0",
-		"wifi-on-ice-portal-client": "^0.1.1"
+		"wifi-on-ice-portal-client": "^0.2.1"
 	},
 	"devDependencies": {
 		"tap-min": "^1.2.1",

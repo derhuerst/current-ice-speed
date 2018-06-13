@@ -5,18 +5,19 @@
 [![npm version](https://img.shields.io/npm/v/current-ice-speed.svg)](https://www.npmjs.com/package/current-ice-speed)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/current-ice-speed.svg)
 [![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
+[![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
 
 
 ## Usage
 
 ```shell
 npx current-ice-speed
-// 264 km/h
+# 264 km/h
 npx current-ice-speed --json
-// 264
+# 264
 
-npx current-ice-speed --json // in a tunnel
-// null
+npx current-ice-speed --json # in a tunnel
+# null
 ```
 
 ## API
