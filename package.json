@@ -26,6 +26,7 @@
 		"node": ">=6"
 	},
 	"dependencies": {
+		"ansi-escapes": "^3.1.0",
 		"mri": "^1.1.0",
 		"wifi-on-ice-portal-client": "^0.2.1"
 	},

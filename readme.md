@@ -18,6 +18,8 @@ npx current-ice-speed --json
 
 npx current-ice-speed --json # in a tunnel
 # null
+
+npx current-ice-speed --refresh 5 # refresh speed every 5 seconds
 ```
 
 ## API
