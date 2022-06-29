@@ -2,6 +2,7 @@
 	"name": "current-ice-speed",
 	"description": "Get the speed of the ICE train you're sitting in.",
 	"version": "1.0.0",
+	"type": "module",
 	"main": "index.js",
 	"bin": {
 		"current-ice-speed": "./cli.js"
@@ -23,10 +24,10 @@
 	"bugs": "https://github.com/derhuerst/current-ice-speed/issues",
 	"license": "ISC",
 	"engines": {
-		"node": ">=6"
+		"node": ">=16"
 	},
 	"dependencies": {
-		"ansi-escapes": "^3.1.0",
+		"ansi-escapes": "^5.0.0",
 		"mri": "^1.1.0",
 		"wifi-on-ice-portal-client": "^0.2.1"
 	},

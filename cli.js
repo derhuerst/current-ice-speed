@@ -1,7 +1,11 @@
 #!/usr/bin/env node
-'use strict'
 
-const mri = require('mri')
+// todo: use import assertions once they're supported by Node.js & ESLint
+// https://github.com/tc39/proposal-import-assertions
+import {createRequire} from 'module'
+const require = createRequire(import.meta.url)
+
+import mri from 'mri'
 
 const pkg = require('./package.json')
 
@@ -27,9 +31,11 @@ if (argv.version || argv.v) {
 	process.exit(0)
 }
 
-const {isatty} = require('tty')
-const {eraseLine, cursorLeft} = require('ansi-escapes')
-const speed = require('.')
+import {isatty} from 'tty'
+import ansiEscapes from 'ansi-escapes'
+import {speed} from './index.js'
+
+const {eraseLine, cursorLeft} = ansiEscapes
 
 const onError = (err) => {
 	console.error(err)

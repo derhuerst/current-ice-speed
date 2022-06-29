@@ -1,8 +1,5 @@
-'use strict'
-
-const test = require('tape')
-
-const speed = require('.')
+import test from 'tape'
+import {speed} from './index.js'
 
 test('speed', (t) => {
 	t.plan(3)

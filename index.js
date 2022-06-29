@@ -1,10 +1,10 @@
-'use strict'
+import {status} from 'wifi-on-ice-portal-client'
 
-const {status} = require('wifi-on-ice-portal-client')
-
-const speed = () => {
-	return status()
-	.then(data => data.speed)
+const speed = async () => {
+	const data = await status()
+	return data.speed
 }
 
-module.exports = speed
+export {
+	speed,
+}
