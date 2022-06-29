@@ -29,12 +29,12 @@
 	"dependencies": {
 		"ansi-escapes": "^5.0.0",
 		"mri": "^1.1.0",
-		"wifi-on-ice-portal-client": "^0.2.1"
+		"wifi-on-ice-portal-client": "^1.2.0"
 	},
 	"devDependencies": {
 		"eslint": "^8.18.0",
-		"tap-min": "^1.2.1",
-		"tape": "^4.6.3"
+		"tap-min": "^2.0.0",
+		"tape": "^5.5.3"
 	},
 	"scripts": {
 		"lint": "eslint .",
